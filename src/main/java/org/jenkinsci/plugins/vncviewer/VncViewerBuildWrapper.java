@@ -128,7 +128,9 @@ public class VncViewerBuildWrapper extends BuildWrapper {
 		}
 
 		String hostAddr = determineJenkinsHostAddress(listener);
-		String url = "http://" + hostAddr + ":" + lp + "/vnc_auto.html?host=" + hostAddr + "&port=" + lp;
+
+		String[] vnc = vncServReplaced.split(":", 2);
+		String url = "http://" + vnc[0] + ":" + vnc[1] + "/vnc_auto.html?host=" + vnc[0] + "&port=" + vnc[1];
 		String txt = "Start vnc viewer for " + vncServReplaced;
 		listener.getLogger().print('\n');
 		listener.annotate(new ConsoleNoteButton(txt,url));
