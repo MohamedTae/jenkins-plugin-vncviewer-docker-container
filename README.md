@@ -1,5 +1,5 @@
-VNCViewer Docker-Container Plugin
-=================================
+Jenkins Plugin VNCViewer Docker-Container
+=========================================
 
 Building
 --------
