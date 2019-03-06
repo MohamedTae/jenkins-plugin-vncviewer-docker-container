@@ -65,7 +65,7 @@ public class VncViewerBuildWrapper extends BuildWrapper {
 		if (port.isEmpty()) port = DESCRIPTOR.getDefaultPort();
 
 		try {
-            String targetUrl = "http://" + ip + ":" + port + "/vnc_auto.html?host=" + ip + "&port=" + port;
+            String targetUrl = "http://" + ip + ":" + port + "/vnc_auto.html";
             String btnTxt = "Start vnc viewer for " + ip + ":" + port;
             listener.annotate(new ConsoleNoteButton(btnTxt, targetUrl));
             listener.getLogger().print("\n");
