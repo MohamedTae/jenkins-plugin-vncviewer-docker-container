@@ -1,5 +1,5 @@
-VNC-Viewer Plugin
-=================
+VNCViewer Docker-Container Plugin
+=================================
 
 Building
 --------
